@@ -1,0 +1,23 @@
+{
+  "name": "tenant-media-hostnames",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/creator_delivery_service.ts",
+    "setup": "tsx scripts/create_media_bucket.ts",
+    "test": "tsx --test test/tenant_media_workflow.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
